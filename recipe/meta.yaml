@@ -65,7 +65,7 @@ test:
     - sx2poscar --help
     - sxblocksizes --help
     - sxeprhyper --help
-    - sxgetskfiles --help
+    # - sxgetskfiles --help  # ERROR: SPHInX compiled without TB support
     - sxpdos --help
     - sxrhosplit --help
     - sxstructrep --help
