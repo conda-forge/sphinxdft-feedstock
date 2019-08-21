@@ -90,7 +90,7 @@ test:
     - sxcheckinput --help
     - sxepsprint --help
     - sxkpprint --help
-    - sxposmate --help
+    - sxposmatel --help
     - sxslab --help
     - sxstructsort --help
     - sxwavesjoin --help
