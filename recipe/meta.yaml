@@ -77,7 +77,7 @@ test:
     - sxpespectrum --help
     - sxrictst --help
     - sxstructrot --help
-    - sxwaveh5tosxb --help
+    # - sxwaveh5tosxb --help  # Tool is only working with HDF5 support!
     - sx2xyz --help
     - sxcalcquamoloverlap --help
     - sxepscontribpaw --help
