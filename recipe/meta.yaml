@@ -17,11 +17,11 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
     - libtool
     - make
   host:
-    - libnetcdf =4.7.4=nompi_h9f9fd6a_101
-    - libgfortran-ng
+    - libnetcdf
     - mkl
     - mkl-include
     - pcre2
