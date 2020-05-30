@@ -10,7 +10,7 @@ source:
   sha256: ec55344adfe3c69f205318e862b3e7caef6f4f20a900761f2818ca82eb6124a1
 
 build:
-  number: 7
+  number: 8
   skip: True  # [not linux]
 
 requirements:
@@ -21,13 +21,12 @@ requirements:
     - make
   host:
     - libnetcdf
+    - libgfortran-ng
     - mkl
     - mkl-include
     - pcre2
   run:
-    - libnetcdf
     - mkl
-    - pcre2
 
 test:
   commands: 
