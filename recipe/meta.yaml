@@ -24,6 +24,8 @@ requirements:
     - mkl
     - mkl-include
     - pcre2
+  run:
+    - mkl
 
 test:
   commands: 
