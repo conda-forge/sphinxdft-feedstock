@@ -10,7 +10,7 @@ source:
   sha256: ec55344adfe3c69f205318e862b3e7caef6f4f20a900761f2818ca82eb6124a1
 
 build:
-  number: 9
+  number: 10
   skip: True  # [not linux]
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - libtool
     - make
   host:
-    - libnetcdf
+    - libnetcdf =4.7.4=nompi_h9f9fd6a_101
     - libgfortran-ng
     - mkl
     - mkl-include
