@@ -10,7 +10,7 @@ source:
   sha256: ec55344adfe3c69f205318e862b3e7caef6f4f20a900761f2818ca82eb6124a1
 
 build:
-  number: 9
+  number: 10
   skip: True  # [not linux]
 
 requirements:
@@ -33,7 +33,7 @@ test:
     - Al_GGA.atomicdata
     - input.sx
   commands: 
-    - sphinx >> sphinx.log  # test calculation
+    - sphinx  # test calculation
     - sphinx --help
     - sx2aims --help
     - sxb2bspectrum --help
