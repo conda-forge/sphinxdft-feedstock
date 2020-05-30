@@ -10,18 +10,18 @@ source:
   sha256: ec55344adfe3c69f205318e862b3e7caef6f4f20a900761f2818ca82eb6124a1
 
 build:
-  number: 11
+  number: 12
   skip: True  # [not linux]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
     - libtool
     - make
   host:
-    - libnetcdf =4.7.4=nompi_h9f9fd6a_101
-    - libgfortran-ng
+    - libnetcdf
     - mkl
     - mkl-include
     - pcre2
