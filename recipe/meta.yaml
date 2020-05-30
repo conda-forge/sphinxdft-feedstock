@@ -21,6 +21,7 @@ requirements:
     - make
   host:
     - libnetcdf
+    - libgfortran-ng
     - mkl
     - mkl-include
     - pcre2
