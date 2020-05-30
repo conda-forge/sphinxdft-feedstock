@@ -20,7 +20,7 @@ requirements:
     - libtool
     - make
   host:
-    - libnetcdf
+    - libnetcdf=4.7.4=nompi_h9f9fd6a_101
     - libgfortran-ng
     - mkl
     - mkl-include
