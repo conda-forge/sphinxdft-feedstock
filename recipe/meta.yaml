@@ -1,5 +1,5 @@
 {% set name = "sphinxdft" %}
-{% set version = "2.6.1" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/{{ name }}/sphinx/archive/{{ version }}.tar.gz
-  sha256: ec55344adfe3c69f205318e862b3e7caef6f4f20a900761f2818ca82eb6124a1
+  sha256: 01ca18d7bb105361eb076a0319dda36a33ef3e7c359413bb51b727ea201d70ec
 
 build:
-  number: 13
-  skip: True  # [not linux]
+  number: 0
+  skip: true  # [not linux]
 
 requirements:
   build:
@@ -32,7 +32,7 @@ test:
   files:
     - Al_GGA.atomicdata
     - input.sx
-  commands: 
+  commands:
     - sphinx  # test calculation
     - sphinx --help
     - sx2aims --help
@@ -129,7 +129,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'S/PHI/nX is a C++ library for materials simulation, mostly electronic-structure theory'
+  summary: S/PHI/nX is a C++ library for materials simulation, mostly electronic-structure theory
 
   description: |
     S/PHI/nX is a C++ library for materials simulation, mostly 
