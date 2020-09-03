@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('fortran') }}
     - libtool
     - make
+    - msinttypes
   host:
     - libnetcdf
     - mkl
