@@ -1,5 +1,7 @@
 #!/bin/bash
-export CXX=$GXX # the sphinx configure script does not recognise x86_64-conda_cos6-linux-gnu-c++ as g++ so we replace it with x86_64-conda_cos6-linux-gnu-g++ which works fine. 
+export CXX=$GXX # the sphinx configure script does not recognise x86_64-conda_cos6-linux-gnu-c++ as g++ so we replace it with x86_64-conda_cos6-linux-gnu-g++ which works fine.
+export CPPFLAG="-Wno-literal-suffix " $CPPFLAG
+export CXXFLAG="-Wno-literal-suffix " $CXXFLAG
 ./configure --prefix=${PREFIX} \
     OBJCXX=${CXX} \
     CFLAGS="${CFLAGS}" \
