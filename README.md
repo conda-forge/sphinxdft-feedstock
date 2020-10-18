@@ -5,9 +5,13 @@ Home: https://sxrepo.mpie.de
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxdft-feedstock/blob/master/LICENSE.txt)
 
 Summary: S/PHI/nX is a C++ library for materials simulation, mostly electronic-structure theory
+
+Development: https://sxrepo.mpie.de
+
+Documentation: https://sxrepo.mpie.de/attachments/download/41/sphinx-manual-2.6.pdf
 
 S/PHI/nX is a C++ library for materials simulation, mostly
 electronic-structure theory. It also is a program (sphinx) to perform
@@ -32,10 +36,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64</td>
+              <td>linux_64_c_compiler_version7cxx_compiler_version7fortran_compiler_version7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7514&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sphinxdft-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sphinxdft-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version7cxx_compiler_version7fortran_compiler_version7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_compiler_version9cxx_compiler_version9fortran_compiler_version9</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7514&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sphinxdft-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cxx_compiler_version9fortran_compiler_version9" alt="variant">
                 </a>
               </td>
             </tr>
