@@ -10,7 +10,7 @@ source:
   sha256: 01ca18d7bb105361eb076a0319dda36a33ef3e7c359413bb51b727ea201d70ec
 
 build:
-  number: 1
+  number: 2
   skip: true  # [not linux]
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - pcre2
   run:
     - mkl
+    - sphinxdft-data
 
 test:
   files:
