@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ name }}/sphinx/archive/{{ version }}.tar.gz
+  url: https://github.com/eisenforschung/sphinx/archive/{{ version }}.tar.gz
   sha256: 01ca18d7bb105361eb076a0319dda36a33ef3e7c359413bb51b727ea201d70ec
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux]
 
 requirements:
