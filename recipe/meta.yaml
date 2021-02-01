@@ -10,7 +10,7 @@ source:
   sha256: 01ca18d7bb105361eb076a0319dda36a33ef3e7c359413bb51b727ea201d70ec
 
 build:
-  number: 3
+  number: 4
   skip: true  # [not linux]
 
 requirements:
@@ -142,3 +142,4 @@ about:
 extra:
   recipe-maintainers:
     - jan-janssen
+    - freyso
