@@ -23,7 +23,7 @@ libnetcdf:
 mkl:
 - '2021'
 pcre2:
-- '10.36'
+- '10.37'
 pin_run_as_build:
   mkl:
     max_pin: x
