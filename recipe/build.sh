@@ -3,6 +3,7 @@ export CXX=$GXX # the sphinx configure script does not recognise x86_64-conda_co
 ./configure --prefix=${PREFIX} \
     OBJCXX=${CXX} \
     CFLAGS="${CFLAGS}" \
+    CXX_M_ARCH=-march=x86-64 \
     CPPFLAGS="${CPPFLAGS} -D__STDC_FORMAT_MACROS" \
     --enable-mkl --enable-mklfft --with-mklpath=${PREFIX} \
     --disable-debug --with-sxmath --enable-pcre2
