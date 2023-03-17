@@ -1,11 +1,11 @@
-About sphinxdft
-===============
+About sphinxdft-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxdft-feedstock/blob/main/LICENSE.txt)
 
 Home: https://sxrepo.mpie.de
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxdft-feedstock/blob/main/LICENSE.txt)
 
 Summary: S/PHI/nX is a C++ library for materials simulation, mostly electronic-structure theory
 
