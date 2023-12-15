@@ -1,5 +1,5 @@
 {% set name = "sphinxdft" %}
-{% set version = "3.0.7" %}
+{% set version = "3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
 #  url: https://github.com/eisenforschung/sphinx/archive/{{ version }}.tar.gz
-  url: https://sxrepo.mpie.de/attachments/download/70/sphinx-3.0.7.tar.xz
-  sha256: 8778b99a0d0d49864b3c80553fa37653ad3d4943f801aa8534e96296c95d9f6a
+  url: https://sxrepo.mpie.de/attachments/download/79/sphinx-3.1.tar.xz
+  sha256: aee008d56e4630fde88844f82bfaf7bcffc2a8f6f72cc983ffda669c5151dac7
 
 build:
-  number: 5
+  number: 0
   skip: true  # [not linux]
 
 requirements:
