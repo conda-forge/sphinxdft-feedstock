@@ -7,11 +7,11 @@ package:
 
 source:
 #  url: https://github.com/eisenforschung/sphinx/archive/{{ version }}.tar.gz
-  url: https://sxrepo.mpie.de/attachments/download/79/sphinx-3.1.tar.xz
-  sha256: aee008d56e4630fde88844f82bfaf7bcffc2a8f6f72cc983ffda669c5151dac7
+  url: https://sxrepo.mpie.de/attachments/download/80/sphinx-3.1.tar.xz
+  sha256: 778de7e5a428d25a89a7c12a4fded50593850ca1965eddf92f7200aa81a750a0
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
