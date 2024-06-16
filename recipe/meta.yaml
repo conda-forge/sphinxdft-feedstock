@@ -11,12 +11,13 @@ source:
   sha256: 778de7e5a428d25a89a7c12a4fded50593850ca1965eddf92f7200aa81a750a0
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
     - libtool
