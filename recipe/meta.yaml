@@ -24,8 +24,8 @@ requirements:
     - make
   host:
     - libnetcdf
-    - mkl
-    - mkl-include
+    - mkl >=2024,<2025
+    - mkl-include >=2024,<2025
     - pcre2
   run:
     - {{ pin_compatible("mkl") }} 
