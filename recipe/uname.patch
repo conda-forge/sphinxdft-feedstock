@@ -1,64 +1,50 @@
-From b651f1e6ca44cc501161af4ca14085107dfa8185 Mon Sep 17 00:00:00 2001
+From 1d52350e4c6294a4be3fe8a188e4a859f1f29636 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
-Date: Tue, 16 Sep 2025 21:51:52 +0200
-Subject: [PATCH] uname -s
+Date: Tue, 16 Sep 2025 22:17:02 +0200
+Subject: [PATCH] almalinux
 
 ---
- configure                  | 2 +-
- src/configure              | 2 +-
- sxaccelerate/configure     | 2 +-
- sxaccelerate/src/configure | 2 +-
- 4 files changed, 4 insertions(+), 4 deletions(-)
+ src/configure              | 9 +++++++++
+ sxaccelerate/src/configure | 9 +++++++++
+ 2 files changed, 18 insertions(+)
 
-diff --git a/configure b/configure
-index 4fb7204..60c6276 100755
---- a/configure
-+++ b/configure
-@@ -1444,7 +1444,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
- uname -v = `(uname -v) 2>/dev/null || echo unknown`
- 
- /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
--/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
-+/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
- 
- /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
- /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
 diff --git a/src/configure b/src/configure
-index 21937ad..dd95a15 100755
+index 21937ad..c1bfb72 100755
 --- a/src/configure
 +++ b/src/configure
-@@ -2426,7 +2426,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
- uname -v = `(uname -v) 2>/dev/null || echo unknown`
- 
- /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
--/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
-+/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
- 
- /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
- /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
-diff --git a/sxaccelerate/configure b/sxaccelerate/configure
-index 9c49de6..4e838a6 100755
---- a/sxaccelerate/configure
-+++ b/sxaccelerate/configure
-@@ -1455,7 +1455,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
- uname -v = `(uname -v) 2>/dev/null || echo unknown`
- 
- /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
--/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
-+/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
- 
- /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
- /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
+@@ -5853,6 +5853,15 @@ elif test -f /etc/redhat-release; then
+ #     DIST_REPO_VER="${DIST_MAJOR}.${DIST_MINOR}"
+       DIST_REPO_VER="${DIST_MAJOR}"
+       ;;
++    "AlmaLinux release"*)
++      DIST_OS=Linux
++      DIST_NAME=AlmaLinux
++      DIST_VERSION=`cut -f 3 -d ' ' /etc/redhat-release`
++      DIST_MAJOR=`echo $DIST_VERSION | cut -f 1 -d '.'`
++      DIST_MINOR=0
++      DIST_PATCH=0
++      DIST_REPO_VER="${DIST_MAJOR}"
++      ;;
+    esac
+ elif test -f /etc/debian_version; then
+    DIST_OS=Linux
 diff --git a/sxaccelerate/src/configure b/sxaccelerate/src/configure
-index ebcb9d3..26877a2 100755
+index ebcb9d3..4f28c6a 100755
 --- a/sxaccelerate/src/configure
 +++ b/sxaccelerate/src/configure
-@@ -2477,7 +2477,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
- uname -v = `(uname -v) 2>/dev/null || echo unknown`
- 
- /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
--/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
-+/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
- 
- /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
- /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
+@@ -5923,6 +5923,15 @@ elif test -f /etc/redhat-release; then
+ #     DIST_REPO_VER="${DIST_MAJOR}.${DIST_MINOR}"
+       DIST_REPO_VER="${DIST_MAJOR}"
+       ;;
++    "AlmaLinux release"*)
++      DIST_OS=Linux
++      DIST_NAME=AlmaLinux
++      DIST_VERSION=`cut -f 3 -d ' ' /etc/redhat-release`
++      DIST_MAJOR=`echo $DIST_VERSION | cut -f 1 -d '.'`
++      DIST_MINOR=0
++      DIST_PATCH=0
++      DIST_REPO_VER="${DIST_MAJOR}"
++      ;;
+    esac
+ elif test -f /etc/debian_version; then
+    DIST_OS=Linux
