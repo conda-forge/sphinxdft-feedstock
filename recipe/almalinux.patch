@@ -1,0 +1,50 @@
+From 1d52350e4c6294a4be3fe8a188e4a859f1f29636 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Tue, 16 Sep 2025 22:17:02 +0200
+Subject: [PATCH] almalinux
+
+---
+ src/configure              | 9 +++++++++
+ sxaccelerate/src/configure | 9 +++++++++
+ 2 files changed, 18 insertions(+)
+
+diff --git a/src/configure b/src/configure
+index 21937ad..c1bfb72 100755
+--- a/src/configure
++++ b/src/configure
+@@ -5853,6 +5853,15 @@ elif test -f /etc/redhat-release; then
+ #     DIST_REPO_VER="${DIST_MAJOR}.${DIST_MINOR}"
+       DIST_REPO_VER="${DIST_MAJOR}"
+       ;;
++    "AlmaLinux release"*)
++      DIST_OS=Linux
++      DIST_NAME=AlmaLinux
++      DIST_VERSION=`cut -f 3 -d ' ' /etc/redhat-release`
++      DIST_MAJOR=`echo $DIST_VERSION | cut -f 1 -d '.'`
++      DIST_MINOR=0
++      DIST_PATCH=0
++      DIST_REPO_VER="${DIST_MAJOR}"
++      ;;
+    esac
+ elif test -f /etc/debian_version; then
+    DIST_OS=Linux
+diff --git a/sxaccelerate/src/configure b/sxaccelerate/src/configure
+index ebcb9d3..4f28c6a 100755
+--- a/sxaccelerate/src/configure
++++ b/sxaccelerate/src/configure
+@@ -5923,6 +5923,15 @@ elif test -f /etc/redhat-release; then
+ #     DIST_REPO_VER="${DIST_MAJOR}.${DIST_MINOR}"
+       DIST_REPO_VER="${DIST_MAJOR}"
+       ;;
++    "AlmaLinux release"*)
++      DIST_OS=Linux
++      DIST_NAME=AlmaLinux
++      DIST_VERSION=`cut -f 3 -d ' ' /etc/redhat-release`
++      DIST_MAJOR=`echo $DIST_VERSION | cut -f 1 -d '.'`
++      DIST_MINOR=0
++      DIST_PATCH=0
++      DIST_REPO_VER="${DIST_MAJOR}"
++      ;;
+    esac
+ elif test -f /etc/debian_version; then
+    DIST_OS=Linux
