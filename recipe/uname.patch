@@ -1,0 +1,64 @@
+From b651f1e6ca44cc501161af4ca14085107dfa8185 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Tue, 16 Sep 2025 21:51:52 +0200
+Subject: [PATCH] uname -s
+
+---
+ configure                  | 2 +-
+ src/configure              | 2 +-
+ sxaccelerate/configure     | 2 +-
+ sxaccelerate/src/configure | 2 +-
+ 4 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/configure b/configure
+index 4fb7204..60c6276 100755
+--- a/configure
++++ b/configure
+@@ -1444,7 +1444,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
+ uname -v = `(uname -v) 2>/dev/null || echo unknown`
+ 
+ /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+-/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
++/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
+ 
+ /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
+ /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
+diff --git a/src/configure b/src/configure
+index 21937ad..dd95a15 100755
+--- a/src/configure
++++ b/src/configure
+@@ -2426,7 +2426,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
+ uname -v = `(uname -v) 2>/dev/null || echo unknown`
+ 
+ /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+-/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
++/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
+ 
+ /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
+ /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
+diff --git a/sxaccelerate/configure b/sxaccelerate/configure
+index 9c49de6..4e838a6 100755
+--- a/sxaccelerate/configure
++++ b/sxaccelerate/configure
+@@ -1455,7 +1455,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
+ uname -v = `(uname -v) 2>/dev/null || echo unknown`
+ 
+ /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+-/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
++/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
+ 
+ /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
+ /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
+diff --git a/sxaccelerate/src/configure b/sxaccelerate/src/configure
+index ebcb9d3..26877a2 100755
+--- a/sxaccelerate/src/configure
++++ b/sxaccelerate/src/configure
+@@ -2477,7 +2477,7 @@ uname -s = `(uname -s) 2>/dev/null || echo unknown`
+ uname -v = `(uname -v) 2>/dev/null || echo unknown`
+ 
+ /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+-/bin/uname -X     = `(/bin/uname -X) 2>/dev/null     || echo unknown`
++/bin/uname -X     = `(/bin/uname -s) 2>/dev/null     || echo unknown`
+ 
+ /bin/arch              = `(/bin/arch) 2>/dev/null              || echo unknown`
+ /usr/bin/arch -k       = `(/usr/bin/arch -k) 2>/dev/null       || echo unknown`
