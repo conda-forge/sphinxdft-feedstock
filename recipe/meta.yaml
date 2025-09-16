@@ -24,6 +24,10 @@ requirements:
     - make
     - autoconf
     - automake
+    - grep
+    - gawk
+    - perl
+    - sed
   host:
     - libnetcdf
     - mkl
