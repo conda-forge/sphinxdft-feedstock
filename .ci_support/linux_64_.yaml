@@ -27,7 +27,7 @@ libnetcdf:
 mkl:
 - '2024'
 pcre2:
-- '10.44'
+- '10.45'
 target_platform:
 - linux-64
 zip_keys:
