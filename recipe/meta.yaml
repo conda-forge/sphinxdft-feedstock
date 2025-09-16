@@ -9,6 +9,8 @@ source:
 #  url: https://github.com/eisenforschung/sphinx/archive/{{ version }}.tar.gz
   url: https://sxrepo.mpie.de/attachments/download/80/sphinx-3.1.tar.xz
   sha256: 778de7e5a428d25a89a7c12a4fded50593850ca1965eddf92f7200aa81a750a0
+  patches:
+    - uname.patch
 
 build:
   number: 5
@@ -22,12 +24,6 @@ requirements:
     - {{ compiler('fortran') }}
     - libtool
     - make
-    - autoconf
-    - automake
-    - grep
-    - gawk
-    - perl
-    - sed
   host:
     - libnetcdf
     - mkl
