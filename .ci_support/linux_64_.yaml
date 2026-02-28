@@ -21,7 +21,7 @@ fortran_compiler:
 fortran_compiler_version:
 - '14'
 libnetcdf:
-- 4.9.3
+- 4.10.0
 mkl:
 - '2025'
 pcre2:
