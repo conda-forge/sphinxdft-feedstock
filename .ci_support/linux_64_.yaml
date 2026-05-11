@@ -23,7 +23,7 @@ fortran_compiler_version:
 libnetcdf:
 - 4.10.0
 mkl:
-- '2025'
+- '2026'
 pcre2:
 - '10.47'
 target_platform:
