@@ -3,20 +3,19 @@ About sphinxdft-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxdft-feedstock/blob/main/LICENSE.txt)
 
-Home: https://sxrepo.mpie.de
+Home: https://sxrepo.mpie.de/
 
 Package license: Apache-2.0
 
 Summary: S/PHI/nX is a C++ library for materials simulation, mostly electronic-structure theory
 
-Development: https://sxrepo.mpie.de
+Development: https://sxrepo.mpie.de/
 
 Documentation: https://sxrepo.mpie.de/attachments/download/41/sphinx-manual-2.6.pdf
 
 S/PHI/nX is a C++ library for materials simulation, mostly
 electronic-structure theory. It also is a program (sphinx) to perform
 such simulations using density-functional theory, and k.p theory.
-
 
 Current build status
 ====================
@@ -49,31 +48,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sphinxdft` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sphinxdft
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sphinxdft
 ```
 
-It is possible to list all of the versions of `sphinxdft` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sphinxdft
+# for installing globally
+pixi global install sphinxdft
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sphinxdft` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sphinxdft --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sphinxdft --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sphinxdft --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -85,6 +126,8 @@ mamba repoquery whoneeds sphinxdft --channel conda-forge
 # List dependencies of `sphinxdft`:
 mamba repoquery depends sphinxdft --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
